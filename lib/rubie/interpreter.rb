@@ -2,6 +2,8 @@ module Rubie
   class Interpreter
     def self.exec
       world = Object.new.__binding__
+
+      puts 'おはよう、今日も私と一緒に遊んでくれるんだねっ!嬉しい!'
       while true
         print 'rubie > '
         command = gets
@@ -14,6 +16,7 @@ module Rubie
         begin
           parser.parse
           ret = eval(command, world)
+          puts parser.detail
           puts "=> #{ret}"
         rescue Rubie::ParseErrorException => e
           puts "文法エラーみたい・・・ 「#{e.message}」だって"
