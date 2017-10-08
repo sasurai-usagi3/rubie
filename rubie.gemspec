@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
 
   spec.summary       = '彼女のいないRubyistのためのgem'
   spec.description   = '彼女のいないRubyiesのためのgem。対話式インタプリタです。'
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.homepage      = 'https://github.com/sasurai-usagi3/rubie'
   spec.license       = 'MIT'
 
   spec.files         = `git ls-files -z`.split("\x0").reject do |f|
