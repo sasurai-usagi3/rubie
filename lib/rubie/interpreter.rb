@@ -1,7 +1,7 @@
 module Rubie
   class Interpreter
     def self.exec
-      world = Object.new.__binding__
+      world = Object.new.send(:binding)
 
       puts 'おはよう、今日も私と一緒に遊んでくれるんだねっ!嬉しい!'
       while true
